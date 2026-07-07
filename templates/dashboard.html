@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DDoS Monitoring Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>DDoS Monitoring Dashboard</h1>
+
+<div class="container">
+    <h2>Total Requests</h2>
+    <p id="total">0</p>
+
+    <h2>Normal Requests</h2>
+    <p id="normal">0</p>
+
+    <h2>Attack Requests</h2>
+    <p id="attack">0</p>
+
+    <h2>Status</h2>
+    <p id="status">Monitoring...</p>
+
+    <br>
+
+    <button onclick="simulateTraffic()">Generate Normal Traffic</button>
+    <button onclick="simulateAttack()">Simulate DDoS Attack</button>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
