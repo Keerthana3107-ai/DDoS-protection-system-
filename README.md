@@ -17,14 +17,21 @@ This is a mini project that demonstrates a basic DDoS protection system using Py
 - JavaScript
 
 ## Project Structure
-```
-DDOS-protection-system/
-│── app.py
-│── detector.py
-│── requirements.txt
-│── static/
-│── templates/
-```
+DDOS-PROTECTION-SYSTEM/
+│
+├── app.py
+├── detector.py
+├── database.py
+├── ddos.db
+├── requirements.txt
+│
+├── templates/
+│   ├── index.html
+│   └── dashboard.html
+│
+└── static/
+    ├── style.css
+    └── script.js
 
 ## How to Run
 1. Install Python.
